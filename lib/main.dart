@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:netflix/domain/core/di/injectable.dart';
 
 import 'package:netflix/presentation/main_page/screen_mainpage.dart';
 
-void main() {
+Future<void> main() async {
+  await configureInjection();
   runApp(const MyApp());
 }
 
