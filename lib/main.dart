@@ -4,6 +4,7 @@ import 'package:netflix/domain/core/di/injectable.dart';
 import 'package:netflix/presentation/main_page/screen_mainpage.dart';
 
 Future<void> main() async {
+  WidgetsFlutterBinding();
   await configureInjection();
   runApp(const MyApp());
 }
