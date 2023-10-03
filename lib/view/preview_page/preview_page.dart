@@ -53,7 +53,7 @@ class PreviewScreen extends StatelessWidget {
                       child: Column(
                         children: [
                           Container(
-                              height: 100,
+                              height: 90,
                               width: 100,
                               decoration: index <
                                       PreviewPageImages.previewImageList.length
