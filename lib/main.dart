@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:netflix/domain/core/di/injectable.dart';
+import 'package:netflix/view/splash_screen/splash_screen.dart';
 
-import 'package:netflix/presentation/main_page/screen_mainpage.dart';
-
-Future<void> main() async {
-  WidgetsFlutterBinding();
-  await configureInjection();
+main() async {
   runApp(const MyApp());
 }
 
@@ -22,7 +18,7 @@ class MyApp extends StatelessWidget {
           scaffoldBackgroundColor: Colors.black),
       darkTheme: ThemeData.dark(useMaterial3: true),
       themeMode: ThemeMode.dark,
-      home: ScreenMainPage(),
+      home: SplashScreen(),
     );
   }
 }
